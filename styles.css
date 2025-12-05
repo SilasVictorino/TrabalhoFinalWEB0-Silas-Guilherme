@@ -14,7 +14,7 @@ body {
 
 header {
   background: #002147;
-  padding: 15px 30px;
+  padding: 2px 4px;
 }
 
 .navbar {
@@ -29,6 +29,10 @@ header {
   font-weight: 600;
 }
 
+.PROEXT {
+   height: 92px;
+   width: auto;
+}
 
 .logo {
   height: 60px;
@@ -63,31 +67,45 @@ header {
   opacity: 0.9;
 }
 
-
-
-section h1 {
-  color: #002147;
-  font-size: 80px;
-  font-weight: 900;
-  text-transform: uppercase;
-  margin-bottom: 10px;
+.bloco-extensao {
+    background-color: #aeb5bb71;  /* azul da Rural bem suave (transparente) */
+    padding: 40px;
+    border-radius: 16px;
+    width: 98%;
+    margin: 40px auto;
+    box-shadow: 0 6px 18px rgba(6, 2, 53, 0.582);
 }
 
-/* SUBTÍTULO */
-section h2 {
-  color: #002147;
-  font-size: 32px;
-  font-weight: 600;
-  margin-bottom: 20px;
+
+.pavilhao {
+  width: 100vw;      /* faz a imagem ocupar toda a tela */
+  height: auto;
+  display: block;
 }
 
-/* TEXTO EXPLICATIVO */
-section h3 {
-  color: #002147;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.5;
+
+.texto_centro {
+    position: absolute;
+    top: 50%;                    /* centro da imagem */
+    left: 50%;
+    transform: translate(-50%, -50%);  /* centralização real */
+
+    color: white;
+    text-align: center;
+    text-shadow: 3px 3px 10px black;
+    font-family: 'Playfair Display';
 }
+
+.texto_centro .titulo {
+    font-size: 70px;            /* texto de cima */
+    font-weight: bold;
+}
+
+.texto_centro .subtitulo {
+    font-size: 40px;           /* texto de baixo */
+    margin-top: 10px;          /* distância entre as frases */
+}
+
 
 
 .carousel-container {
@@ -122,30 +140,84 @@ section h3 {
   scroll-snap-align: start;
 }
 
+.container {
+    position: relative;   /* permite colocar elementos absolutos dentro */
+    display: inline-block;
+}
+
+
+.texto {
+    position: absolute;
+    top: 20px;    
+    left: 20px;    
+    color: white;
+    font-size: 35px;
+    font-family: 'Playfair Display';
+    text-shadow: 2px 2px 8px black; 
+}
+
+#extensoes h1 {
+  color: #cce5ff;
+  font-size: 36px; 
+  text-align: center;
+
+  background-color: #002147;   /* cor de fundo do bloco */
+  padding: 20px 40px;           /* espaço interno do bloco */
+  border-radius: 25px;          /* cantos arredondados */
+  margin: 20px auto;            /* centraliza horizontalmente */
+  display: block;               /* faz o bloco ocupar largura automática do container */
+  max-width: 20%;               /* opcional: limita a largura do bloco */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* sombra suave */
+}
+
+
+
 
 .card img {
     width: 100%;
     height: 180px;
     object-fit: cover;
+    border-radius: 10px;
+
 }
 
-.card h3 {
-    margin: 16px 0 8px;
-}
 
 
-.card {
-    border-left: 6px solid #ff4d4d; /* vermelho */
+.carousel .card {
+    padding: 20px;
+    border-left: 6px solid #002147;
     border-radius: 8px;
-    padding: 16px;
     background: #fff;
     width: 300px;
 }
 
 
-.data {
-    position: absolute;
-    text-align: right;
-    font-size: 0.9rem; /* deixa pequenininho */
-    color: #666;       /* cinza suave */
+.cards_container {
+    display: flex;
+    justify-content: space-between; /* distribui igualmente os cards */
+    gap: 20px;                      /* espaço entre eles */
+    padding: 20px;                  /* espaço interno do bloco */
+    margin-top: 20px;
+    align-items: stretch;           /* deixa os cards com a mesma altura */
+}
+
+
+.card0 {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+
+footer {
+  background: #002147;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
