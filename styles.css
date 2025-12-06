@@ -68,7 +68,7 @@ header {
 }
 
 .bloco-extensao {
-    background-color: #aeb5bb71;  /* azul da Rural bem suave (transparente) */
+    background-color: #aeb5bb71; 
     padding: 40px;
     border-radius: 16px;
     width: 98%;
@@ -78,7 +78,7 @@ header {
 
 
 .pavilhao {
-  width: 100vw;      /* faz a imagem ocupar toda a tela */
+  width: 1303px;   
   height: auto;
   display: block;
 }
@@ -86,9 +86,9 @@ header {
 
 .texto_centro {
     position: absolute;
-    top: 50%;                    /* centro da imagem */
+    top: 50%;                 
     left: 50%;
-    transform: translate(-50%, -50%);  /* centralização real */
+    transform: translate(-50%, -50%); 
 
     color: white;
     text-align: center;
@@ -97,13 +97,13 @@ header {
 }
 
 .texto_centro .titulo {
-    font-size: 70px;            /* texto de cima */
+    font-size: 70px;            
     font-weight: bold;
 }
 
 .texto_centro .subtitulo {
-    font-size: 40px;           /* texto de baixo */
-    margin-top: 10px;          /* distância entre as frases */
+    font-size: 40px;         
+    margin-top: 10px;          
 }
 
 
@@ -141,7 +141,7 @@ header {
 }
 
 .container {
-    position: relative;   /* permite colocar elementos absolutos dentro */
+    position: relative;
     display: inline-block;
 }
 
@@ -161,13 +161,13 @@ header {
   font-size: 36px; 
   text-align: center;
 
-  background-color: #002147;   /* cor de fundo do bloco */
-  padding: 20px 40px;           /* espaço interno do bloco */
-  border-radius: 25px;          /* cantos arredondados */
-  margin: 20px auto;            /* centraliza horizontalmente */
-  display: block;               /* faz o bloco ocupar largura automática do container */
-  max-width: 20%;               /* opcional: limita a largura do bloco */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* sombra suave */
+  background-color: #002147; 
+  padding: 20px 40px;          
+  border-radius: 25px;         
+  margin: 20px auto;           
+  display: block;               
+  max-width: 20%;              
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 
@@ -194,11 +194,11 @@ header {
 
 .cards_container {
     display: flex;
-    justify-content: space-between; /* distribui igualmente os cards */
-    gap: 20px;                      /* espaço entre eles */
-    padding: 20px;                  /* espaço interno do bloco */
+    justify-content: space-between;
+    gap: 20px;                    
+    padding: 20px;                 
     margin-top: 20px;
-    align-items: stretch;           /* deixa os cards com a mesma altura */
+    align-items: stretch;        
 }
 
 
