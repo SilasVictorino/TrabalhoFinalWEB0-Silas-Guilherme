@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +5,7 @@
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background: #f4f4f4;
   color: #333;
   line-height: 1.6;
@@ -24,9 +23,20 @@ header {
   color: #fff;
 }
 
-.navbar h3 {
-  font-size: 1.6rem;
-  font-weight: 600;
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  opacity: 0.7;
 }
 
 .PROEXT {
@@ -39,50 +49,16 @@ header {
   width: auto;
 }
 
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
+.container {
+    position: relative;
+    display: inline-block;
 }
-
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-
-.nav-links a:hover {
-  opacity: 0.7;
-}
-
-
-.rural_p1 img {
-  width: 100%;
-  height: auto;
-  display: block;
-  opacity: 0.9;
-}
-
-.bloco-extensao {
-    background-color: #aeb5bb71; 
-    padding: 40px;
-    border-radius: 16px;
-    width: 98%;
-    margin: 40px auto;
-    box-shadow: 0 6px 18px rgba(6, 2, 53, 0.582);
-}
-
 
 .pavilhao {
   width: 1303px;   
   height: auto;
   display: block;
 }
-
 
 .texto_centro {
     position: absolute;
@@ -106,57 +82,34 @@ header {
     margin-top: 10px;          
 }
 
-
-
-.carousel-container {
-  flex: 0 0 280px;
-  position: relative;
-  padding: 20px;
-  width: 100%;
-  overflow: hidden;
+.bloco-extensao {
+    background-color: #aeb5bb71; 
+    padding: 40px;
+    border-radius: 16px;
+    width: 98%;
+    margin: 40px auto;
+    box-shadow: 0 6px 18px rgba(6, 2, 53, 0.582);
 }
 
-
-.carousel {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 20px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  padding: 20px 10px;
-  scroll-snap-type: x mandatory;
+.cards_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;                    
+    padding: 20px;                 
+    margin-top: 20px;
+    align-items: stretch;        
 }
 
-
-.carousel .card {
-  height: 350px;
-  min-width: 360px;
-  max-width: 360px;
-  background: white;
-  padding: 20px;
-  border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  scroll-snap-align: start;
+.card0 {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-sizing: border-box;
 }
 
-.container {
-    position: relative;
-    display: inline-block;
-}
-
-
-.texto {
-    position: absolute;
-    top: 20px;    
-    left: 20px;    
-    color: white;
-    font-size: 35px;
-    font-family: 'Playfair Display';
-    text-shadow: 2px 2px 8px black; 
-}
-
-#extensoes h1 {
+.extensoes h2 {
   color: #cce5ff;
   font-size: 36px; 
   text-align: center;
@@ -170,8 +123,37 @@ header {
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
+.carousel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px 10px;
+  scroll-snap-type: x mandatory;
+}
 
+.carousel .card {
+  height: 350px;
+  min-width: 360px;
+  max-width: 360px;
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  scroll-snap-align: start;
+}
 
+.texto {
+    position: absolute;
+    top: 20px;    
+    left: 20px;    
+    color: white;
+    font-size: 35px;
+    font-family: 'Playfair Display';
+    text-shadow: 2px 2px 8px black; 
+}
 
 .card img {
     width: 100%;
@@ -181,36 +163,13 @@ header {
 
 }
 
-
-
-.carousel .card {
+.card {
     padding: 20px;
     border-left: 6px solid #002147;
     border-radius: 8px;
     background: #fff;
     width: 300px;
 }
-
-
-.cards_container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;                    
-    padding: 20px;                 
-    margin-top: 20px;
-    align-items: stretch;        
-}
-
-
-.card0 {
-    flex: 1;
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    box-sizing: border-box;
-}
-
 
 footer {
   background: #002147;
